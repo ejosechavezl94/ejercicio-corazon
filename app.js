@@ -35,7 +35,8 @@ const asciiHeart = [
 ]
 
 
-const animatedByChart = (ms) => {
+const animatedByChart = async (ms) => {
+
     let totalDelay = 0;
     asciiHeart.forEach((line) => {
         line.split('').forEach((char, charIndex) => {
@@ -50,7 +51,7 @@ const animatedByChart = (ms) => {
     });
 };
 
-animatedByChart(100)
+animatedByChart(150)
 
 const animateByLine = (ms) => {
     asciiHeart.forEach((line, index) => {
@@ -66,5 +67,4 @@ animateByLine(50)
 
 
 
-// animateByChart(1)
-// animateByLine(100)
+
